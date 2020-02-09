@@ -7,9 +7,11 @@ end
 split_words_array.join(" ")
 end
   
-def reverse_each_word_with_collect(array)
-  words_split = array.split(" ")
-  results = words_split.collect do | w | p w.reverse
+def reverse_each_word_with_collect(string)
+  new_array = string.split(" ")
+  results_array = []
+  new_array.collect do | string | 
+    results_array << string.reverse
 end
-results
+results_array.join(" ")
 end
