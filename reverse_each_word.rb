@@ -1,7 +1,7 @@
 def reverse_each_word(array)
   words_split = array.split(" ")
   result = words_split.each do | w | p w.reverse
-  result[w].join(" ")
+  result[w].concat
 end
 result
 end
